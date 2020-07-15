@@ -8,6 +8,7 @@ public class ShootCommand extends CommandBase {
 
     public ShootCommand(Shooter shooter) {
         this.shooter = shooter;
+        ShootCommand shoot = new ShootCommand(shooter);
     }
 
     @Override
